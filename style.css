@@ -1,0 +1,77 @@
+body {
+  background: #00091b;
+  color: #fff;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 1;
+  font-size: 60px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: normal;
+}
+
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+  /* Fade in effect start */
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  /* Fade in effect end */
+}
+
+.dot {
+  color: #ff2e9a;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  color: #00091b;
+  background: #fff;
+  height: 15px;
+  width: 15px;
+  padding: 13px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  transition: all 200ms ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.icons i:hover,
+.icons i:active {
+  color: #fff;
+  background: none;
+  cursor: pointer !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-decoration: none;
+}
